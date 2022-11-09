@@ -18,6 +18,7 @@ export default function Header() {
 
 const Container = styled.div`
     width: 100vw;
+    height: 86px;
     background-color: #4784C1;
 
     font-size: 16px;
@@ -28,6 +29,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
 `
 
 const Content = styled.div`
@@ -37,10 +42,6 @@ const Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: fixed;
-    z-index: 1;
-    top: 0;
 `
 
 const Div = styled.div`
