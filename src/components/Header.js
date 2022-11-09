@@ -1,14 +1,17 @@
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 
 export default function Header() {
+    const navigate = useNavigate();
+
     return (
         <Container>
             <Content>
                 <img src={'Logo aqui'} alt='olhar360-logo' />
                 <Nav>
-                    <div><p>Home</p></div>
-                    <div><p>About</p></div>
-                    <div><p>Contact</p></div>
+                    <div><p onClick={() => navigate('/')}>Home</p></div>
+                    <div><p onClick={() => navigate('/about')}>About</p></div>
+                    <div><p onClick={() => navigate('/contact')}>Contact</p></div>
                 </Nav>
             </Content>
             <Div></Div>
