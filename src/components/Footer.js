@@ -1,13 +1,16 @@
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 
 export default function Footer() {
+    const navigate = useNavigate();
+    
     return (
         <Container>
             <Div></Div>
             <Nav>
-                <div><p>Home</p></div>
-                <div><p>About</p></div>
-                <div><p>Contact</p></div>
+                <div><p onClick={() => navigate('/')}>Home</p></div>
+                <div><p onClick={() => navigate('/about')}>About</p></div>
+                <div><p onClick={() => navigate('/contact')}>Contact</p></div>
             </Nav>
             <p>&copy; Olhar360 &trade; 2022</p>
         </Container>
