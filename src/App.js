@@ -18,13 +18,13 @@ export default function App() {
             <GlobalStyle />
             <BrowserRouter>
                 <Header />
-                <Routes>
-                    <Main>
+                <Main>
+                    <Routes> 
                         <Route path={'/'} element={<Home />} />
                         <Route path={'/about'} element={<About />} />
                         <Route path={'/contact'} element={<Contacts />} />
-                    </Main>
-                </Routes>
+                    </Routes>
+                </Main>
                 <Footer />
             </BrowserRouter>
         </>
